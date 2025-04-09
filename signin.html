@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+    <link rel="icon" href="../pictures/logo12.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pictures/logo12.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="auth-page">
+        <div class="auth-card">
+            <div class="auth-branding">
+                <h2 class="auth-welcome">Welcome Back</h2>
+                <p class="auth-message">Sign in to your account to continue your journey</p>
+            </div>
+            
+            <div class="auth-forms">
+                <!-- Sign In form  -->
+                <form id="signInForm" class="auth-form active">
+                    <h3 class="auth-title">Sign In</h3>
+                    
+                    <div class="auth-field">
+                        <label for="signInEmail">Email</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="signInEmail" placeholder="Your email address" required>
+                        </div>
+                        <div class="auth-error" id="signInEmailError"></div>
+                    </div>
+                    
+                    <div class="auth-field">
+                        <label for="signInPassword">Password</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="signInPassword" placeholder="Your password" required>
+                        </div>
+                        <div class="auth-error" id="signInPasswordError"></div>
+                    </div>
+                    
+                    <div class="auth-options">
+                        <div class="auth-remember">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="auth-forgot">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">Sign In</button>
+                    
+                  
+                    <div class="auth-success" id="signInSuccess">Signed in successfully!</div>
+                    
+                    <div class="auth-divider">
+                        <span>Or continue with</span>
+                    </div>
+                    
+                    <!-- login options -->
+                    <div class="auth-social">
+                        <button type="button" class="auth-social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="auth-social-btn google">
+                            <i class="fab fa-google"></i>
+                        </button>
+                        <button type="button" class="auth-social-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="auth-switch">
+                        <p>Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+                    </div>
+                </form>
+
+                <!-- Sign Up form  -->
+                <form id="signUpForm" class="auth-form">
+                    <h3 class="auth-title">Create Account</h3>
+                    
+                    <div class="auth-field">
+                        <label for="signUpName">Full Name</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="signUpName" placeholder="Your full name" required>
+                        </div>
+                        <div class="auth-error" id="signUpNameError"></div>
+                    </div>
+                    
+                    <div class="auth-field">
+                        <label for="signUpEmail">Email</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="signUpEmail" placeholder="Your email address" required>
+                        </div>
+                        <div class="auth-error" id="signUpEmailError"></div>
+                    </div>
+                    
+                    <div class="auth-field">
+                        <label for="signUpPassword">Password</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="signUpPassword" placeholder="Create a password" required>
+                        </div>
+                        <div class="auth-error" id="signUpPasswordError"></div>
+                    </div>
+                    
+                    <div class="auth-field">
+                        <label for="signUpConfirmPassword">Confirm Password</label>
+                        <div class="auth-input-wrap">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="signUpConfirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                        <div class="auth-error" id="signUpConfirmPasswordError"></div>
+                    </div>
+                    
+                    <div class="auth-terms">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                        <div class="auth-error" id="agreeTermsError"></div>
+                    </div>
+                    
+                    <button type="submit" class="auth-button">Create Account</button>
+                    
+                    <div class="auth-success" id="signUpSuccess">Account created successfully!</div>
+                    
+                    <div class="auth-switch">
+                        <p>Already have an account? <a href="#" id="showSignIn">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cookie  -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookies to improve your experience and store user login information. By continuing to use this site, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie">Accept</button>
+            <button id="deny-cookie">Deny</button>
+        </div>
+    </div>
+    <script src="../js/signin.js"></script>
+</body>
+</html>
