@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - One Watch</title>
+    <link rel="icon" href="../pictures/logo12.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pictures/logo12.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="../pictures/logo12.png" class="logo" alt="logo"></a>
+        <div id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../shop.html" class="active">Shop</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="../pages/signin.html" id="authLink">Sign-in</a></li>
+                <li class="user-profile" id="userProfileIcon" style="display: none;"><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+            <i id="close" class="fas fa-times"></i>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- Shop Banner -->
+    <section id="shop-hero">
+        <h2>#ShopWithUs</h2>
+        <p>Find your perfect timepiece from our carefully curated collection</p>
+    </section>
+
+    <!-- Product Filters -->
+    <section id="shop-filters" class="part-p1">
+        <div class="filter-container">
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <div class="filter-options">
+                    <label><input type="checkbox" checked> All</label>
+                    <label><input type="checkbox"> Luxury</label>
+                    <label><input type="checkbox"> Sports</label>
+                    <label><input type="checkbox"> Casual</label>
+                    <label><input type="checkbox"> Smart</label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <div class="filter-options">
+                    <label><input type="checkbox" checked> All</label>
+                    <label><input type="checkbox"> Under $100</label>
+                    <label><input type="checkbox"> $100 - $200</label>
+                    <label><input type="checkbox"> $200 - $300</label>
+                    <label><input type="checkbox"> $300+</label>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <h4>Sort By</h4>
+                <select id="sort-filter">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Watches Section -->
+    <section id="shop-products" class="part-p1">
+        <h2>Popular Watches</h2>
+        <p>Our best-selling timepieces loved by customers worldwide</p>
+        <div class="product-grid">
+            <div class="wch">
+                <img src="../pictures/watches/w1.png" alt="Classic Chronograph">
+                <div class="dis">
+                    <span>Luxe Time</span>
+                    <h5>Classic Chronograph</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$199</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <img src="../pictures/watches/w2.webp" alt="Urban Explorer">
+                <div class="dis">
+                    <span>Timex</span>
+                    <h5>Urban Explorer</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$159</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <img src="../pictures/watches/w3.png" alt="Sapphire Collection">
+                <div class="dis">
+                    <span>Elegance</span>
+                    <h5>Sapphire Collection</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$249</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <img src="../pictures/watches/w4.png" alt="Precision Series">
+                <div class="dis">
+                    <span>Momentum</span>
+                    <h5>Precision Series</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$179</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <img src="../pictures/watches/w5.png" alt="Executive Model">
+                <div class="dis">
+                    <span>Chronos</span>
+                    <h5>Executive Model</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$289</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <img src="../pictures/watches/w6.png" alt="Minimalist Design">
+                <div class="dis">
+                    <span>Serenity</span>
+                    <h5>Minimalist Design</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$145</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals Section -->
+    <section id="new-arrivals" class="part-p1">
+        <h2>New Arrivals</h2>
+        <p>Discover our latest timepieces, fresh from the design studio</p>
+        <div class="product-grid">
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/n1.png" alt="Celestial Collection">
+                <div class="dis">
+                    <span>Aurora</span>
+                    <h5>Celestial Collection</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$329</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/n2.png" alt="Executive Elite">
+                <div class="dis">
+                    <span>Pinnacle</span>
+                    <h5>Executive Elite</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$399</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/w7.png" alt="Sport Edition">
+                <div class="dis">
+                    <span>Velocity</span>
+                    <h5>Sport Edition</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$195</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/w8.png" alt="Adventure Series">
+                <div class="dis">
+                    <span>Horizon</span>
+                    <h5>Adventure Series</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$219</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/n5.png" alt="Crystal Collection">
+                <div class="dis">
+                    <span>Ethereal</span>
+                    <h5>Crystal Collection</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$349</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+
+            <div class="wch">
+                <div class="new-tag">New</div>
+                <img src="../pictures/watches/n6.png" alt="Precision Automatic">
+                <div class="dis">
+                    <span>Quantum</span>
+                    <h5>Precision Automatic</h5>
+                    <div class="review">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$425</h4>
+                </div>
+                <a href="#" class="cart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagination" class="part-p1">
+        <div class="pagination-controls">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Cookie -->
+    <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie">Accept</button>
+            <button id="deny-cookie">Deny</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="part-p1">
+        <div class="fot">
+            <img src="../pictures/logo.png" height="100" weight="100" alt="">
+            <p>123 Timepiece Avenue, Watchton</p>
+            <p>London, SW1A 1AA, United Kingdom</p>
+            <p>+44 20 7123 4567</p>
+            <p><strong>Hours:</strong> 09:00-18:00 Mon-Fri</p>
+            <div class="social">
+                <h4>Connect with us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="fot">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="fot">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="fot app">
+            <h4>Install our app</h4>
+            <p>From Apple Store and Google Play Store</p>
+            <div class="row">
+                <img src="../pictures/app.png" height="30" alt="">
+                <img src="../pictures/play.webp" height="30" alt="">
+            </div>
+
+            <p>Payment methods</p>
+            <img src="../pictures/pay.jpg" height="60" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © One Watch 2025. All rights reserved.</p>
+        </div>
+    </footer>
+    
+ 
+    <script src="../js/shop.js"></script>
+</body>
+
+</html>
