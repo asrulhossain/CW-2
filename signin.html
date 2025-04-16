@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - One Watch</title>
+    <link rel="icon" href="../pictures/logo12.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../pictures/logo12.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <section id="header">
+        <a href="#"><img src="../pictures/logo12.png" class="logo" alt="logo"></a>
+        <div id="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../shop.html" class="active">Shop</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="../pages/signin.html" id="authLink">Sign-in</a></li>
+                <li class="user-profile" id="userProfileIcon" style="display: none;"><a href="#"><i
+                            class="fas fa-user-circle"></i></a></li>
+            </ul>
+            <i id="close" class="fas fa-times"></i>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- login -->
+
+    <div class="auth-container">
+        <div class="auth-forms">
+            <div class="tabs">
+                <div class="tab active" data-tab="login">Login</div>
+                <div class="tab" data-tab="signup">Sign Up</div>
+            </div>
+
+            <div class="form-container active" id="login-form">
+                <form id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                        <div class="error-message" id="loginEmailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                        <div class="error-message" id="loginPasswordError"></div>
+                    </div>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="success-message" id="loginSuccess">Login successful!</div>
+                </form>
+            </div>
+            <!-- signup -->
+            <div class="form-container" id="signup-form">
+                <form id="signupForm" novalidate>
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" required>
+                        <div class="error-message" id="signupNameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" required>
+                        <div class="error-message" id="signupEmailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" required>
+                        <div class="error-message" id="signupPasswordError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" required>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+                    <div class="terms">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the <a href="#">Terms & Conditions</a></label>
+                        <div class="error-message" id="agreeTermsError"></div>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                    <div class="success-message" id="signupSuccess">Account created successfully!</div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="part-p1">
+        <div class="fot">
+            <img src="../pictures/logo.png" height="100" weight="100" alt="">
+            <p>123 Timepiece Avenue, Watchton</p>
+            <p>London, SW1A 1AA, United Kingdom</p>
+            <p>+44 20 7123 4567</p>
+            <p><strong>Hours:</strong> 09:00-18:00 Mon-Fri</p>
+            <div class="social">
+                <h4>Connect with us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="fot">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms & conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+
+        <div class="fot">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">My wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="fot app">
+            <h4>Install our app</h4>
+            <p>From Apple Store and Google Play Store</p>
+            <div class="row">
+                <img src="../pictures/app.png" height="30" alt="">
+                <img src="../pictures/play.webp" height="30" alt="">
+            </div>
+
+            <p>Payment methods</p>
+            <img src="../pictures/pay.jpg" height="60" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © One Watch 2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/signin.js"></script>
+    <script src="../js/signin.js"></script>
+</body>
+
+</html>
